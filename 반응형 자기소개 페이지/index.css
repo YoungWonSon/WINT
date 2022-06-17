@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 8px 12px;
+   
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar__logo i {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+ 
+.navbar__menu li {
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover{
+    background-color: gray;
+    border-radius: 4px;
+}
+.navbar__icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+    color: white;
+}
+
+.navbar__icons li:hover{
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.navbar__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: white;
+}  
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar__toogleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+}
+html,body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 10%
+}
+.translucent{
+    opacity: 0.4;
+    margin-left: 3%;
+    display: inline;
+}
+.section{
+    width: 100%;
+  
+    height: 40%;
+  
+    text-align: center;
+    margin-bottom: 5px;
+}
+.att{
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.mt{
+    width: 100%;
+    height: 5%;
+}
+.at{
+ 
+    width: 100%;
+    height: 40%;
+    color: black;
+    
+  
+}
+.B:hover{
+    background-color : rgb(206,242,121);
+    transition : 3s;
+}
+.b:hover{
+    background-color : rgb(50,50,255);
+    transition : 3s;
+}
+.S:hover{
+    background-color : rgb(30,30,30);
+    transition : 3s;
+}
+.s:hover{
+    background-color : #cce5ff;
+    transition : 3s;
+}
+.imgg{
+    width: 100%;
+    height: 55%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.name{
+    font-size: 30px;
+    margin: 0;
+}
+p{
+    color: black;
+}
+@media screen and (max-width: 768px){
+    .section{
+        width: 100%;
+      
+        height: 200%;
+      
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .att{
+        width: 80%;
+        height: 50%;
+        border: 0px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    footer{
+        visibility: hidden;
+    }
+    .at{
+        height: 20%;
+        border: 1px solid black;
+    }
+}
